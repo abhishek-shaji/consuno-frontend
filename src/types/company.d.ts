@@ -7,4 +7,5 @@ export interface CompanyType {
   logo: string;
   specialities: Speciality[];
   website: string;
+  city: string;
 }

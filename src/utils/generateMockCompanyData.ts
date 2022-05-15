@@ -39,6 +39,7 @@ export const generateMockCompanyData = (maxItems: number): CompanyType[] => {
       logo: 'https://www.myangelkids.com/wp-content/uploads/sites/213/2020/05/logo-04.png',
       website: 'https://example.com',
       specialities: pickRandomSpecialities(),
+      city: 'Berlin',
     });
   }
 

@@ -17,21 +17,24 @@ const CompanyList = ({ items }: CompanyListPropType) => (
         className="block border-b border-slate-200 hover:-translate-y-1 hover:shadow-lg cursor-pointer transition-all"
         key={item.id}
       >
-        <div className="flex items-center my-5">
-          <img
-            src={item.logo}
-            alt={item.name}
-            className="w-32 h-20 rounded object-cover"
-          />
-          <div className="ml-4">
-            <div className="font-bold capitalize">{item.name}</div>
-            <div className="opacity-75 text-sm capitalize">
-              {item.description}
-            </div>
-            <div className="opacity-75 text-sm capitalize">
-              Specialities: {item.specialities.join(', ')}
+        <div className="flex justify-between items-center">
+          <div className="flex items-center my-5">
+            <img
+              src={item.logo}
+              alt={item.name}
+              className="w-32 h-20 rounded object-cover"
+            />
+            <div className="ml-4">
+              <div className="font-bold capitalize">{item.name}</div>
+              <div className="opacity-75 text-sm capitalize">
+                {item.description}
+              </div>
+              <div className="opacity-75 text-sm capitalize">
+                Specialities: {item.specialities.join(', ')}
+              </div>
             </div>
           </div>
+          <p className="text-sm text-slate-500 mr-6">{item.city}</p>
         </div>
       </a>
     ))}
