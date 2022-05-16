@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Header = () => (
-  <header className="fixed top-0 left-0 border-b border-slate-200 w-full">
+  <header className="fixed top-0 left-0 border-b border-slate-200 w-full bg-white z-50">
     <div className="container mx-auto">
       <div className="flex justify-between items-center py-4">
         <div className="flex items-center">
